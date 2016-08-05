@@ -1,69 +1,119 @@
 body {
   font-family: 'Muli', sans-serif;
+  position: relative;
 }
 
 /*=========NAV BAR=============*/
+.navbar {
+  width: 100%;
+  padding: none;
+  border-radius: 0px;
+}
 
+.affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
 
 a, a:hover {
-  color: #f9f4e7;
+  color: #76627D;
   font-size: 2em
 }
 
+
 .navbar-default {
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('../img/leather.jpg') no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('../img/leather.jpg') no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('../img/leather.jpg') no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('../img/leather.jpg') no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('../img/leather.jpg') no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('../img/leather.jpg') no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(192,192,192,0.3) 100%), url('../img/background.jpg') no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.3))), url('../img/background.jpg') no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(192,192,192,0.3) 100%), url('../img/background.jpg') no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(192,192,192,0.3) 100%), url('../img/background.jpg') no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(192,192,192,0.3) 100%), url('../img/background.jpg') no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 5%, rgba(100,192,192,0.7) 100%), no-repeat;
   background-position: right;
   border:none;
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: rgba(0, 0, 0, .2) !important;
-  color: #f9f4e7;
+  color: #76627D;
   font-size: 1em;
   padding: 10px;
 }
 .navbar-default .navbar-nav>li>a {
-  color: #f9f4e7;
+  color: #76627D;
   font-size: 1em;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
-  color: #f9f4e7;
+  color: #76627D;
 }
 
 /*=============JUMBOTRON============*/
 .jumbotron {
   background-image: url('../img/background.jpeg');
-  height:50em;
-  background-position: center;
+  height:600px;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Muli', sans-serif;
+  color: #fff;
+  margin: 0px;
+  padding-bottom:0px;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 0;
 }
 
-.jumbotron{
-    color: #4f1c07;
-}
-
 .title {
   font-size: 2em;
-  margin-top: 8em;
+  margin-top: 6em;
 }
-  )
+
 
 /*=============END OF JUMBOTRON============*/
 
 /*==========CAROUSEL==========*/
-
+.topMid {
+  margin-top: 6em;
+}
 
 .carousel-control.right, .carousel-control.left {
   background-image: none;
 }
+
+.yellow, .blue, .red, .orange, .caro {
+  height: 293px;
+}
+
+.caro {
+  padding:0px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
 /*==========END OF CAROUSEL==========*/
+
+/*========paras==============*/
+.paras {
+  margin-top: 6em;
+}
