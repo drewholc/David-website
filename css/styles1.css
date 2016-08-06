@@ -1,0 +1,78 @@
+body {
+  background: url('../img/bedroom.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+}
+
+.wrapper {
+  display: flex;
+}
+
+.btn {
+    position: absolute;
+    top: 75%;
+    left: 47%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.btn-default, {
+  background-color: white;
+  border-color: black;
+  color: black;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:after {
+  background-color: white;
+}
+
+.btn-default span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-default span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: black;
+}
+
+.btn-default:hover span {
+  padding-right: 25px;
+  padding-left:10px;
+  color: black;
+}
+
+.btn-default:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+      outline: 0px auto -webkit-focus-ring-color;
+}
+
+.btn-default:focus, .btn-default:active, .btn-default:visited {
+  background-color: #fff;
+  outline: 0px;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
